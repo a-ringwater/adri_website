@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import colors from "../../assets/colors";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: lightgrey;
 `;
 
 const HeaderLogo = styled.div`
@@ -13,10 +13,22 @@ const HeaderLogo = styled.div`
   padding: 1rem;
 `;
 
+const LogoLink = styled.div`
+  color: ${colors.black};
+  text-transform: uppercase;
+`;
+
 const HeaderRoutes = styled.div`
   display: flex;
-  justify-content: flex-end;
   padding: 1rem;
+`;
+
+const RoutesLink = styled.div`
+  color: ${colors.black};
+  margin: 0 1rem 0 1rem;
+  &:hover { 
+    text-decoration: underline;
+  }
 `;
 
 const Navbar = () => {
@@ -24,21 +36,21 @@ const Navbar = () => {
     <HeaderContainer>
       <HeaderLogo>
         <Link to="/">
-          <div>Adrien</div>
+          <LogoLink>Adrien</LogoLink>
         </Link>
       </HeaderLogo>
       <HeaderRoutes>
         <Link to="/about">
-          <div>About</div>
+          <RoutesLink>About</RoutesLink>
         </Link>
         <Link to="/skills">
-          <div>Skills</div>
+          <RoutesLink>Skills</RoutesLink>
         </Link>
         <Link to="/portfolio">
-          <div>Portfolio</div>
+          <RoutesLink>Portfolio</RoutesLink>
         </Link>
         <Link to="/contact">
-          <div>Contact</div>
+          <RoutesLink>Contact</RoutesLink>
         </Link>
       </HeaderRoutes>
     </HeaderContainer>
