@@ -1,0 +1,9 @@
+.App {
+    min-height: 100vh;
+}
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(-175px + 100vh);
+}

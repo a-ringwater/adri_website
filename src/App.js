@@ -2,14 +2,17 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import RouterConfig from "./navigation/RouterConfig";
+import "./App.scss";
 
 function App() {
   return (
     <BrowserRouter>
-      <main className="App">
+      <div className="App">
         <Navbar />
-        <RouterConfig />
-      </main>
+        <main className="main-content">
+          <RouterConfig />
+        </main>
+      </div>
     </BrowserRouter>
   );
 }
