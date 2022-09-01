@@ -1,0 +1,67 @@
+.home_ctr {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home_main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home_avatar {
+  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(
+      135deg,
+      rgb(0, 255, 164),
+      rgb(166, 104, 255)
+    ) repeat scroll 0% 0%;
+    border-radius: 50%;
+  height: 40vh;
+  width: 40vh;
+}
+
+.home_desc_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home_list {
+  padding: 0.5em;
+}
+
+.home_btn_ctr {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio_btn,
+.contact_btn {
+  background-color: black;
+  border: solid 1px black;
+  border-radius: 0.25em;
+  color: white;
+  padding: 0.5em;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.social_ctr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.social_el {
+    cursor: pointer;
+}

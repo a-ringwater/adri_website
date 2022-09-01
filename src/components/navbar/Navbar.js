@@ -15,7 +15,6 @@ const HeaderLogo = styled.div`
 
 const LogoLink = styled.div`
   color: ${colors.black};
-  text-transform: uppercase;
 `;
 
 const HeaderRoutes = styled.div`
@@ -36,21 +35,21 @@ const Navbar = () => {
     <HeaderContainer>
       <HeaderLogo>
         <Link to="/">
-          <LogoLink>Adrien</LogoLink>
+          <LogoLink>home</LogoLink>
         </Link>
       </HeaderLogo>
       <HeaderRoutes>
         <Link to="/about">
-          <RoutesLink>About</RoutesLink>
+          <RoutesLink>about</RoutesLink>
         </Link>
         <Link to="/skills">
-          <RoutesLink>Skills</RoutesLink>
+          <RoutesLink>skills</RoutesLink>
         </Link>
         <Link to="/portfolio">
-          <RoutesLink>Portfolio</RoutesLink>
+          <RoutesLink>portfolio</RoutesLink>
         </Link>
         <Link to="/contact">
-          <RoutesLink>Contact</RoutesLink>
+          <RoutesLink>contact</RoutesLink>
         </Link>
       </HeaderRoutes>
     </HeaderContainer>
