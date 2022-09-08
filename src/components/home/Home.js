@@ -11,19 +11,19 @@ const Home = () => {
 
       <div className="home_main_content">
         <div className="home_desc_content">
-          <h1>
-            Hi, I am <span>Adrien</span>
+          <h1 className="hello_typewriter">
+            Hello, I am <span>Adrien</span>
             <span class="hello_hand">🤚</span>
           </h1>
 
-          <h2>Web & Mobile developer.</h2>
+          <h2 className="home_role">Web & Mobile developer.</h2>
           <ul className="home_list">
             <li>
               <span role="img">🌎</span>based in France.
             </li>
           </ul>
 
-          <p>front-end developer with full-stack experiences.</p>
+          <p className="home_short">front-end developer with full-stack experiences.</p>
         </div>
 
         <div className="home_btn_ctr">

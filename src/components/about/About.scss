@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.about_ctr {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about_title {
+  font-family: $primary-font;
+}
+
+.about_content {
+  font-family: $primary-font;
+}

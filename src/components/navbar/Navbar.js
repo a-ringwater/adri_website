@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import colors from "../../assets/colors";
 import styled from "styled-components";
+import "./Navbar.scss";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -25,7 +26,7 @@ const HeaderRoutes = styled.div`
 const RoutesLink = styled.div`
   color: ${colors.black};
   margin: 0 1rem 0 1rem;
-  &:hover { 
+  &:hover {
     text-decoration: underline;
   }
 `;
@@ -35,20 +36,17 @@ const Navbar = () => {
     <HeaderContainer>
       <HeaderLogo>
         <Link to="/">
-          <LogoLink>home</LogoLink>
+          <LogoLink className="navbar_link">home</LogoLink>
         </Link>
       </HeaderLogo>
       <HeaderRoutes>
-        <Link to="/about">
+        <Link to="/about" className="navbar_link">
           <RoutesLink>about</RoutesLink>
         </Link>
-        <Link to="/skills">
-          <RoutesLink>skills</RoutesLink>
-        </Link>
-        <Link to="/portfolio">
+        <Link to="/portfolio" className="navbar_link">
           <RoutesLink>portfolio</RoutesLink>
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" className="navbar_link">
           <RoutesLink>contact</RoutesLink>
         </Link>
       </HeaderRoutes>
