@@ -1,4 +1,10 @@
-@import '../../variables';
+@import "../../variables";
+
+.about_section {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
 
 .about_ctr {
   display: flex;

@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .skills_title {
   font-family: $primary-font;
@@ -6,4 +6,26 @@
 
 .skills {
   font-family: $primary-font;
+}
+
+.tech_icon {
+  width: 80px;
+  height: 80px;
+}
+
+.tech_ctr {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech_item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  padding-right: 1rem;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
