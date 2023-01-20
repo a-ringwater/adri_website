@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .home_ctr {
   display: flex;
@@ -13,18 +13,7 @@
 .home_main_content {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-}
-
-.home_avatar {
-  background: rgba(0, 0, 0, 0) -webkit-linear-gradient(
-      135deg,
-      rgb(0, 255, 164),
-      rgb(166, 104, 255)
-    ) repeat scroll 0% 0%;
-  border-radius: 50%;
-  height: 40vh;
-  width: 40vh;
+  gap: 4rem;
 }
 
 .home_desc_content {
@@ -35,6 +24,7 @@
 
 .hello_typewriter {
   font-family: $primary-font;
+  font-size: 70px;
   overflow: hidden;
   border-right: 0.15em solid orange;
   white-space: nowrap;
@@ -67,30 +57,35 @@
 
 .home_role {
   font-family: $primary-font;
+  font-size: 40px;
 }
 
 .home_short {
   font-family: $primary-font;
+  font-size: 40px;
 }
 
 .home_btn_ctr {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.portfolio_btn,
+.about_btn,
 .contact_btn {
   font-family: $primary-font;
-  background-color: black;
-  border: solid 1px black;
+  font-size: 20px;
+  background-color: #0D0D0D;
+  border: solid 1px #0D0D0D;
   border-radius: 0.25em;
-  color: white;
-  padding: 0.5em;
-
+  color: #F2F2F2;
+  padding: 1em;
+  min-width: 100px;
+  transition: transform 0.3s ease-in-out;
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    transform: scale(1.2);
   }
 }
 
@@ -103,4 +98,8 @@
 
 .social_el {
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 }

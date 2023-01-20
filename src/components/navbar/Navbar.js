@@ -6,16 +6,25 @@ import "./Navbar.scss";
 
 const HeaderContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: ${colors.green};
+  height: 80px;
 `;
 
 const HeaderLogo = styled.div`
   display: flex;
+  font-family: $primary-font;
+  font-size: 25px;
   padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const LogoLink = styled.div`
-  color: ${colors.black};
+  color: ${colors.lightgrey};
 `;
 
 const HeaderRoutes = styled.div`
@@ -24,10 +33,14 @@ const HeaderRoutes = styled.div`
 `;
 
 const RoutesLink = styled.div`
-  color: ${colors.black};
+  color: ${colors.lightgrey};
+  font-family: $primary-font;
+  font-size: 25px;
   margin: 0 1rem 0 1rem;
+  transition: transform 0.3s ease-in-out;
   &:hover {
     text-decoration: underline;
+    transform: scale(1.2);
   }
 `;
 
