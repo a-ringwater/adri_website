@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ThemeContext, themes } from "../../context/ThemeContext";
+import { ThemeContext, themes } from "../context/ThemeContext";
 import { BsMoonStars, BsSun } from "react-icons/bs";
 import styled from "styled-components";
-import { colors } from "../../assets/variables";
+import { colors } from "../assets/variables";
 
 const Wrapper = styled.div`
   display: flex;
@@ -43,7 +43,6 @@ const ThemeToggle = () => {
               onClick={() => {
                 setLightMode(!lightMode);
                 changeTheme(lightMode ? themes.light : themes.dark);
-                localStorage.setItem('theme', lightMode)
               }}
               className="sun"
               size={25}
@@ -55,7 +54,6 @@ const ThemeToggle = () => {
               onClick={() => {
                 setLightMode(!lightMode);
                 changeTheme(lightMode ? themes.light : themes.dark);
-                localStorage.setItem('theme', lightMode)
               }}
               className="moon"
               size={25}

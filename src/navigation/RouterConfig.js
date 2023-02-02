@@ -3,9 +3,9 @@ import { Route, Routes } from "react-router-dom";
 
 import Home from "../components/home/Home";
 import About from "../components/about/About";
-import Skills from "../components/skills/Skills";
-import Portfolio from "../components/portfolio/Portfolio";
-import Contact from "../components/contact/Contact";
+import Skills from "../components/Skills";
+import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 const RouterConfig = () => {
   return (

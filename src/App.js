@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar";
 import RouterConfig from "./navigation/RouterConfig";
 import "./App.scss";
-import Sidebar from "./components/sidebar/Sidebar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (

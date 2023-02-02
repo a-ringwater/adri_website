@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { techBack, techDb, techFront, techVersioning } from "../../utils/tech";
-import { colors } from "../../assets/variables";
+import { techBack, techDb, techFront, techVersioning } from "../utils/tech";
+import { colors } from "../assets/variables";
 
 const TechSection = styled.div`
   color: ${colors.grey};
