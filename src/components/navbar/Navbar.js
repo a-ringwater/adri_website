@@ -1,44 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import colors from "../../assets/colors";
+import { colors, fonts } from "../../assets/variables";
 import styled from "styled-components";
-import "./Navbar.scss";
+import ThemeToggle from "../theme_toggle/ThemeToggle";
 
 const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${colors.green};
+  background-color: ${colors.navy};
   height: 80px;
 `;
 
 const HeaderLogo = styled.div`
   display: flex;
-  font-family: $primary-font;
+  font-family: ${fonts.primary};
   font-size: 25px;
-  padding: 1rem;
+  padding-left: 1rem;
   transition: transform 0.3s ease-in-out;
   &:hover {
     transform: scale(1.2);
   }
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const LogoLink = styled.div`
-  color: ${colors.lightgrey};
+  color: ${colors.green_variant};
 `;
 
 const HeaderRoutes = styled.div`
   display: flex;
-  padding: 1rem;
+  padding-right: 1rem;
 `;
 
 const RoutesLink = styled.div`
   color: ${colors.lightgrey};
-  font-family: $primary-font;
+  font-family: ${fonts.primary};
   font-size: 25px;
   margin: 0 1rem 0 1rem;
   transition: transform 0.3s ease-in-out;
   &:hover {
+    color: ${colors.green_variant};
     text-decoration: underline;
     transform: scale(1.2);
   }
@@ -49,20 +55,25 @@ const Navbar = () => {
     <HeaderContainer>
       <HeaderLogo>
         <Link to="/">
-          <LogoLink className="navbar_link">home</LogoLink>
+          <LogoLink>home</LogoLink>
         </Link>
       </HeaderLogo>
-      <HeaderRoutes>
-        <Link to="/about" className="navbar_link">
-          <RoutesLink>about</RoutesLink>
-        </Link>
-        <Link to="/portfolio" className="navbar_link">
-          <RoutesLink>portfolio</RoutesLink>
-        </Link>
-        <Link to="/contact" className="navbar_link">
-          <RoutesLink>contact</RoutesLink>
-        </Link>
-      </HeaderRoutes>
+
+      <Wrapper>
+        <HeaderRoutes>
+          <Link to="/about">
+            <RoutesLink>about</RoutesLink>
+          </Link>
+          <Link to="/portfolio">
+            <RoutesLink>experiences</RoutesLink>
+          </Link>
+          <Link to="/contact">
+            <RoutesLink>contact</RoutesLink>
+          </Link>
+        </HeaderRoutes>
+
+        <ThemeToggle />
+      </Wrapper>
     </HeaderContainer>
   );
 };

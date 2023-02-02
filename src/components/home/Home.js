@@ -1,54 +1,36 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import Button from "../button/Button";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Home = () => {
-  const githubUrl = "https://github.com/AAdrien-A";
-  const linkedinUrl = "https://www.linkedin.com/in/adrien-anodeau/";
+  const { theme } = useContext(ThemeContext);
 
-  function handleClick(url) {
-    window.open(url, "_blank").focus();
-  }
+  const titleClass = theme === "" ? "welcome" : "welcome_light";
+  const buttonClass = theme === "" ? "home_btn" : "home_btn_light";
 
   return (
     <div className="home_ctr">
       <div className="home_main_content">
         <div className="home_desc_content">
-          <h1 className="hello_typewriter">
-            Hello, I am <span>Adrien</span>
+          <h1 className={titleClass}>
+            Welcome.
           </h1>
 
-          <h2 className="home_role">web & mobile developer.</h2>
-
-          <p className="home_short">based in France.</p>
-
           <p className="home_short">
-            specialized in front-end development with full-stack experiences.
+            My name is Adrien, I am a web & mobile developer specialized in
+            front-end development with full-stack experiences. based in France.
           </p>
         </div>
 
         <div className="home_btn_ctr">
           <Link to="/about">
-            <Button className="about_btn" label="about" />
+            <Button className={buttonClass}>about</Button>
           </Link>
           <Link to="/contact">
-            <Button className="contact_btn" label="contact me" />
+            <Button className={buttonClass}>contact me</Button>
           </Link>
-        </div>
-
-        <div className="social_ctr">
-          <AiFillGithub
-            size={50}
-            className="social_el"
-            onClick={() => handleClick(githubUrl)}
-          />
-          <AiFillLinkedin
-            size={50}
-            className="social_el"
-            onClick={() => handleClick(linkedinUrl)}
-          />
         </div>
       </div>
     </div>

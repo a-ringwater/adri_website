@@ -4,23 +4,17 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <div className="about_section">
-      <div className="about_ctr">
+    <div className="about_ctr">
+      <div className="about_content">
         <h1 className="about_title">about me</h1>
-        <p className="about_content">
+        <p className="about_txt">
           I am a web and mobile developer focusing on front-end with full-stack
-          experiences.
+          experiences. I am mainly working with JavaScript technologies such as
+          React, React Native, Vue, TypeScript. I am enthusiast about creating
+          and developing clean and efficient websites & web applications.
         </p>
-        <p className="about_content">
-          I am mainly working with JavaScript technologies such as React, React
-          Native, Vue, TypeScript.
-        </p>
-        <p className="about_content">
-          I am enthusiast about creating and developing clean and efficient
-          websites & web applications.
-        </p>
-      </div>
-      <div className="skills_ctr">
+        <div className="skills_intro">Technologies I’ve been working with:</div>
+
         <Skills />
       </div>
     </div>

@@ -1,14 +1,39 @@
 import React from "react";
-import "./Skills.scss";
+import styled from "styled-components";
 import { techBack, techDb, techFront, techVersioning } from "../../utils/tech";
+import { colors } from "../../assets/variables";
+
+const TechSection = styled.div`
+  color: ${colors.grey};
+  font-size: 25px;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  &:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: ${colors.green_variant};
+  }
+`;
+
+const TechContainer = styled.span`
+  display: flex;
+  gap: 1rem;
+`;
+
+const TechItem = styled.div`
+  color: ${colors.grey};
+  font-size: 25px;
+  padding-right: 1rem;
+`;
 
 const Skills = () => {
   function createTechItem(techArray) {
-    return techArray.map((t, i) => (
-      <div className="tech_item" key={t.tech}>
-        <span>{t.tech}</span>
-        <img src={t.icon} alt={t.icon} className="tech_icon" />
-      </div>
+    return techArray.map((tech, i) => (
+      <TechItem key={tech}>
+        {tech}
+      </TechItem>
     ));
   }
 
@@ -19,19 +44,21 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="skills_title">technologies I work with:</h2>
+      <TechSection>
+        front-end: <TechContainer>{frontArray}</TechContainer>
+      </TechSection>
 
-      <h3>front-end:</h3>
-      <div className="tech_ctr">{frontArray}</div>
+      <TechSection>
+        back-end: <TechContainer>{backArray}</TechContainer>
+      </TechSection>
 
-      <h3>back-end:</h3>
-      <div className="tech_ctr">{backArray}</div>
+      <TechSection>
+        databases: <TechContainer>{dbArray}</TechContainer>
+      </TechSection>
 
-      <h3>databases:</h3>
-      <div className="tech_ctr">{dbArray}</div>
-
-      <h3>versioning:</h3>
-      <div className="tech_ctr">{vArray}</div>
+      <TechSection>
+        versioning: <TechContainer>{vArray}</TechContainer>
+      </TechSection>
     </>
   );
 };

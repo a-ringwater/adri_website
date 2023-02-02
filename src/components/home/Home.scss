@@ -2,12 +2,25 @@
 
 .home_ctr {
   display: flex;
-  flex-direction: row;
   padding: 1rem;
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: appearHome 1s forwards;
+}
+
+@keyframes appearHome {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home_main_content {
@@ -22,47 +35,22 @@
   gap: 0.5rem;
 }
 
-.hello_typewriter {
+.welcome {
   font-family: $primary-font;
   font-size: 70px;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+  color: #a8b2d1;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-.home_list {
+.welcome_light {
   font-family: $primary-font;
-  padding: 0.5em;
-}
-
-.home_role {
-  font-family: $primary-font;
-  font-size: 40px;
+  font-size: 70px;
+  color: #0a192f;
 }
 
 .home_short {
   font-family: $primary-font;
   font-size: 40px;
+  color: #8892b0;
 }
 
 .home_btn_ctr {
@@ -71,33 +59,31 @@
   gap: 2rem;
 }
 
-.about_btn,
-.contact_btn {
+
+.home_btn {
   font-family: $primary-font;
   font-size: 20px;
-  background-color: #0D0D0D;
-  border: solid 1px #0D0D0D;
+  background-color: transparent;
+  border: solid 1px #64ffda;
   border-radius: 0.25em;
-  color: #F2F2F2;
+  color: #64ffda;
   padding: 1em;
   min-width: 100px;
   transition: transform 0.3s ease-in-out;
   &:hover {
-    background-color: #F2F2F2;
-    color: #0D0D0D;
     transform: scale(1.2);
   }
 }
 
-.social_ctr {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.social_el {
-  cursor: pointer;
+.home_btn_light {
+  font-family: $primary-font;
+  font-size: 20px;
+  background-color: transparent;
+  border: solid 1px #0a192f;
+  border-radius: 0.25em;
+  color: #0a192f;
+  padding: 1em;
+  min-width: 100px;
   transition: transform 0.3s ease-in-out;
   &:hover {
     transform: scale(1.2);
