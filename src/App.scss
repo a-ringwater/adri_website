@@ -1,10 +1,17 @@
 .App {
-    min-height: 100vh;
-    background-color: #F2F2F2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
+.light_mode {
+  background-color: white;
+}
+
 .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(-175px + 100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(-175px + 100vh);
+  padding: 0 10rem;
 }
