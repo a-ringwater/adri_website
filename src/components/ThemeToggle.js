@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ThemeContext, themes } from "../context/ThemeContext";
 import { BsMoonStars, BsSun } from "react-icons/bs";
 import styled from "styled-components";
-import { colors } from "../assets/variables";
+import { colors } from "../assets/styleVar";
 
 const Wrapper = styled.div`
   display: flex;

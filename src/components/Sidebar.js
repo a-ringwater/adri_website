@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import styled from "styled-components";
-import { colors } from "../assets/variables";
+import { colors } from "../assets/styleVar";
 
 const Wrapper = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { colors, fonts } from "../assets/variables";
+import { colors, fonts } from "../assets/styleVar";
 import styled from "styled-components";
 import ThemeToggle from "./ThemeToggle";
 
