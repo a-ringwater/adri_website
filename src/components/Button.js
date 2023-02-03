@@ -21,10 +21,10 @@ const ButtonStyled = styled.button`
   }
 `;
 
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   const { theme } = useContext(ThemeContext);
   return (
-    <ButtonStyled type="button" theme={theme}>
+    <ButtonStyled type="button" theme={theme} onClick={onClick}>
       {children}
     </ButtonStyled>
   );
