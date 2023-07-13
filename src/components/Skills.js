@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { techBack, techDb, techFront, techVersioning } from "../utils/tech";
+import {
+  techBack,
+  techDb,
+  techFront,
+  techCICD,
+  techVersioning,
+} from "../utils/tech";
 import { colors } from "../assets/styleVar";
 
 const TechSection = styled.div`
@@ -30,16 +36,13 @@ const TechItem = styled.div`
 
 const Skills = () => {
   function createTechItem(techArray) {
-    return techArray.map((tech, i) => (
-      <TechItem key={tech}>
-        {tech}
-      </TechItem>
-    ));
+    return techArray.map((tech, i) => <TechItem key={tech}>{tech}</TechItem>);
   }
 
   const frontArray = createTechItem(techFront);
   const backArray = createTechItem(techBack);
   const dbArray = createTechItem(techDb);
+  const cicd = createTechItem(techCICD);
   const vArray = createTechItem(techVersioning);
 
   return (
@@ -54,6 +57,10 @@ const Skills = () => {
 
       <TechSection>
         databases: <TechContainer>{dbArray}</TechContainer>
+      </TechSection>
+
+      <TechSection>
+        CI/CD: <TechContainer>{cicd}</TechContainer>
       </TechSection>
 
       <TechSection>
