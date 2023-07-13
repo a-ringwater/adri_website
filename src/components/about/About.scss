@@ -8,18 +8,18 @@
   align-items: center;
   padding: 4rem;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateY(100%);
   animation: appearAbout 1s forwards;
 }
 
 @keyframes appearAbout {
   from {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

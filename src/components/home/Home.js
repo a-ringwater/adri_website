@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
-import Button from "../Button";
+import Button from "../common/Button";
 import { ThemeContext } from "../../context/ThemeContext";
 
 const Home = () => {
