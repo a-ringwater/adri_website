@@ -44,7 +44,7 @@ const Linkedin = styled(AiFillLinkedin)`
 `;
 
 const Sidebar = () => {
-  const githubUrl = "https://github.com/AAdrien-A";
+  const githubUrl = "https://github.com/a-ringwater";
   const linkedinUrl = "https://www.linkedin.com/in/adrien-anodeau/";
 
   function handleClick(url) {
