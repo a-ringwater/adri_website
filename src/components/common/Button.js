@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { fonts, colors } from "../assets/styleVar";
-import { ThemeContext } from "../context/ThemeContext";
+import { fonts, colors } from "../../assets/styleVar";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const ButtonStyled = styled.button`
   font-family: ${fonts.primary};
