@@ -8,7 +8,7 @@ import Sidebar from "./components/Sidebar";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="bg-grey dark:bg-dark_blue">
         <Navbar />
         <Sidebar />
         <div id="content">

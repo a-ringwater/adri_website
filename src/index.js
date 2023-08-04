@@ -4,15 +4,15 @@ import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./assets/fonts/Montserrat-VariableFont_wght.ttf";
-import ThemeContextWrapper from "./context/ThemeContextWrapper";
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <ThemeContextWrapper>
   <React.StrictMode>
-    <App />
+    <DarkModeProvider>
+      <App />
+    </DarkModeProvider>
   </React.StrictMode>
-  </ThemeContextWrapper>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,35 +1,33 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
-import { ThemeContext } from "../../context/ThemeContext";
 
 const Home = () => {
-  const { theme } = useContext(ThemeContext);
-
-  const titleClass = theme === "" ? "welcome" : "welcome_light";
-  const buttonClass = theme === "" ? "home_btn" : "home_btn_light";
-
   return (
     <div className="home_ctr">
       <div className="home_main_content">
         <div className="home_desc_content">
-          <h1 className={titleClass}>
+          <h1 className="font-primary text-xxl text-dark_blue dark:text-grey">
             Welcome.
           </h1>
 
-          <p className="home_short">
+          <p className="font-primary text-xl text-dark_blue dark:text-grey">
             My name is Adrien, I am a web & mobile developer specialized in
-            front-end development with full-stack experiences. based in France.
+            front-end development using technologies like JavaScript and React. based in France.
           </p>
         </div>
 
         <div className="home_btn_ctr">
           <Link to="/about">
-            <Button className={buttonClass}>about</Button>
+            <Button className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 dark:text-grey dark:border-grey">
+              about
+            </Button>
           </Link>
           <Link to="/contact">
-            <Button className={buttonClass}>contact me</Button>
+            <Button className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 dark:text-grey dark:border-grey">
+              contact me
+            </Button>
           </Link>
         </div>
       </div>

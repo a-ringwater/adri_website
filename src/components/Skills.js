@@ -1,25 +1,19 @@
 import React from "react";
 import styled from "styled-components";
+import tw from "twin.macro";
 import {
   techBack,
   techDb,
   techFront,
   techCICD,
-  techVersioning,
+  techOthers,
 } from "../utils/tech";
-import { colors } from "../assets/styleVar";
 
 const TechSection = styled.div`
-  color: ${colors.grey};
-  font-size: 25px;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
+  ${tw`text-dark_blue text-lg relative pl-10 mb-10 dark:text-grey`}
   &:before {
     content: "▹";
-    position: absolute;
-    left: 0;
-    color: ${colors.green_variant};
+    ${tw`text-green text-lg absolute left-0 dark:text-green`}
   }
 `;
 
@@ -29,9 +23,7 @@ const TechContainer = styled.span`
 `;
 
 const TechItem = styled.div`
-  color: ${colors.grey};
-  font-size: 25px;
-  padding-right: 1rem;
+  ${tw`text-dark_blue text-lg relative pr-1 dark:text-grey`}
 `;
 
 const Skills = () => {
@@ -43,7 +35,7 @@ const Skills = () => {
   const backArray = createTechItem(techBack);
   const dbArray = createTechItem(techDb);
   const cicd = createTechItem(techCICD);
-  const vArray = createTechItem(techVersioning);
+  const vArray = createTechItem(techOthers);
 
   return (
     <>
@@ -60,11 +52,11 @@ const Skills = () => {
       </TechSection>
 
       <TechSection>
-        CI/CD: <TechContainer>{cicd}</TechContainer>
+        test | CI / CD: <TechContainer>{cicd}</TechContainer>
       </TechSection>
 
       <TechSection>
-        versioning: <TechContainer>{vArray}</TechContainer>
+        others: <TechContainer>{vArray}</TechContainer>
       </TechSection>
     </>
   );

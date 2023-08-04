@@ -1,18 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
-import { fonts, colors } from "../../assets/styleVar";
-import { ThemeContext } from "../../context/ThemeContext";
+import { fonts } from "../../assets/styleVar";
 
 const ButtonStyled = styled.button`
   font-family: ${fonts.primary};
   font-size: 20px;
   background-color: transparent;
-  border: solid 1px
-    ${(props) =>
-      props.theme !== "light_mode" ? colors.green_variant : colors.navy};
   border-radius: 0.25em;
-  color: ${(props) =>
-    props.theme !== "light_mode" ? colors.green_variant : colors.navy};
   padding: 1em;
   min-width: 100px;
   transition: transform 0.3s ease-in-out;
@@ -21,10 +15,9 @@ const ButtonStyled = styled.button`
   }
 `;
 
-const Button = ({ children, onClick }) => {
-  const { theme } = useContext(ThemeContext);
+const Button = ({ children, className, onClick }) => {
   return (
-    <ButtonStyled type="button" theme={theme} onClick={onClick}>
+    <ButtonStyled type="button" className={className} onClick={onClick}>
       {children}
     </ButtonStyled>
   );

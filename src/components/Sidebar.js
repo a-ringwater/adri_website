@@ -1,45 +1,28 @@
 import React from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import styled from "styled-components";
-import { colors } from "../assets/styleVar";
+import tw from 'twin.macro';
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 40px;
-  position: fixed;
-  bottom: 0;
-  left: 40px;
-  right: auto;
-  z-index: 10;
-  gap: 2rem;
-
+  ${tw`flex flex-col w-10 fixed bottom-0 left-10 z-10 gap-4`}
   &:after {
     content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0 auto;
-    background-color: ${colors.grey};
+    ${tw`block w-px h-90 m-auto bg-grey_blue`}
   }
 `;
 const Github = styled(AiFillGithub)`
   cursor: pointer;
-  color: ${colors.grey};
-  transition: transform 0.3s ease-in-out;
+  ${tw`text-grey_blue transition-transform duration-300 ease-in-out`}
   &:hover {
-    color: ${colors.green_variant};
-    transform: scale(1.2);
+    ${tw`text-blue_v2 scale-125 dark:text-light_blue`}
   }
 `;
 
 const Linkedin = styled(AiFillLinkedin)`
   cursor: pointer;
-  color: ${colors.grey};
-  transition: transform 0.3s ease-in-out;
+  ${tw`text-grey_blue transition-transform duration-300 ease-in-out`}
   &:hover {
-    color: ${colors.green_variant};
-    transform: scale(1.2);
+    ${tw`text-blue_v2 scale-125 dark:text-light_blue`}
   }
 `;
 
@@ -54,14 +37,8 @@ const Sidebar = () => {
   return (
     <>
       <Wrapper>
-        <Github
-          size={40}
-          onClick={() => handleClick(githubUrl)}
-        />
-        <Linkedin
-          size={40}
-          onClick={() => handleClick(linkedinUrl)}
-        />
+        <Github size={40} onClick={() => handleClick(githubUrl)} />
+        <Linkedin size={40} onClick={() => handleClick(linkedinUrl)} />
       </Wrapper>
     </>
   );

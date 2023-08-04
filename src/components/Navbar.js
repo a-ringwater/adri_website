@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { colors, fonts } from "../assets/styleVar";
+import { fonts } from "../assets/styleVar";
 import styled from "styled-components";
 import ThemeToggle from "./ThemeToggle";
 
@@ -8,7 +8,6 @@ const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: ${colors.navy};
   height: 80px;
 `;
 
@@ -28,49 +27,28 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const LogoLink = styled.div`
-  color: ${colors.green_variant};
-`;
-
-const HeaderRoutes = styled.div`
-  display: flex;
-  padding-right: 1rem;
-`;
-
-const RoutesLink = styled.div`
-  color: ${colors.lightgrey};
-  font-family: ${fonts.primary};
-  font-size: 25px;
-  margin: 0 1rem 0 1rem;
-  transition: transform 0.3s ease-in-out;
-  &:hover {
-    color: ${colors.green_variant};
-    text-decoration: underline;
-    transform: scale(1.2);
-  }
-`;
 
 const Navbar = () => {
   return (
-    <HeaderContainer>
+    <HeaderContainer className="bg-dark_blue dark:bg-navy">
       <HeaderLogo>
         <Link to="/">
-          <LogoLink>home</LogoLink>
+          <div className="text-grey">home</div>
         </Link>
       </HeaderLogo>
 
       <Wrapper>
-        <HeaderRoutes>
+        <div className="flex pr-4">
           <Link to="/about">
-            <RoutesLink>about</RoutesLink>
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">about</div>
           </Link>
-          <Link to="/portfolio">
-            <RoutesLink>experiences</RoutesLink>
+          <Link to="/experiences">
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">experiences</div>
           </Link>
           <Link to="/contact">
-            <RoutesLink>contact</RoutesLink>
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">contact</div>
           </Link>
-        </HeaderRoutes>
+        </div>
 
         <ThemeToggle />
       </Wrapper>

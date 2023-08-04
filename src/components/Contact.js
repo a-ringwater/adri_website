@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import Button from "./common/Button";
 import styled from "styled-components";
 import { colors, fonts } from "../assets/styleVar";
-import { ThemeContext } from "../context/ThemeContext";
+
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,7 +18,6 @@ const Title = styled.h1`
 `;
 
 const Contact = () => {
-  const { theme } = useContext(ThemeContext);
   const handleClick = () => {
     window.location.href = "mailto:adrien.anodeau@gmail.com";
   };
@@ -26,7 +25,7 @@ const Contact = () => {
   return (
     <>
       <Wrapper>
-        <Title theme={theme}>Get in touch</Title>
+        <Title>Get in touch</Title>
         <Button onClick={handleClick}>contact me</Button>
       </Wrapper>
     </>

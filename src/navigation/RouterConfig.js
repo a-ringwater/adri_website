@@ -8,14 +8,14 @@ import Contact from "../components/Contact";
 import useHandleScroll from "../hooks/useHandleScroll";
 
 const RouterConfig = () => {
-  const pages = useMemo(() => ["/", "/about", "/portfolio", "/contact"], []);
-  useHandleScroll(pages);
+  // const pages = useMemo(() => ["/", "/about", "/portfolio", "/contact"], []);
+  // useHandleScroll(pages);
 
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/experiences" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );

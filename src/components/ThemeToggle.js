@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { ThemeContext, themes } from "../context/ThemeContext";
+import React, { useContext } from "react";
+import { DarkModeContext } from "../context/DarkModeContext";
 import { BsMoonStars, BsSun } from "react-icons/bs";
 import styled from "styled-components";
 import { colors } from "../assets/styleVar";
@@ -33,37 +33,32 @@ const Moon = styled(BsMoonStars)`
 `;
 
 const ThemeToggle = () => {
-  const [lightMode, setLightMode] = useState(true);
+  const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prev) => !prev);
+  };
+
   return (
-    <ThemeContext.Consumer>
-      {({ changeTheme }) => (
-        <Wrapper>
-          {lightMode ? (
-            <Sun
-              onClick={() => {
-                setLightMode(!lightMode);
-                changeTheme(lightMode ? themes.light : themes.dark);
-              }}
-              className="sun"
-              size={25}
-              aria-label="auto"
-              aria-live="polite"
-            />
-          ) : (
-            <Moon
-              onClick={() => {
-                setLightMode(!lightMode);
-                changeTheme(lightMode ? themes.light : themes.dark);
-              }}
-              className="moon"
-              size={25}
-              aria-label="auto"
-              aria-live="polite"
-            />
-          )}
-        </Wrapper>
+    <Wrapper>
+      {isDarkMode ? (
+        <Sun
+          onClick={toggleDarkMode}
+          className="sun"
+          size={25}
+          aria-label="auto"
+          aria-live="polite"
+        />
+      ) : (
+        <Moon
+          onClick={toggleDarkMode}
+          className="moon"
+          size={25}
+          aria-label="auto"
+          aria-live="polite"
+        />
       )}
-    </ThemeContext.Consumer>
+    </Wrapper>
   );
 };
 
