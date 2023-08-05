@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import Button from "../common/Button";
@@ -9,12 +9,13 @@ const Home = () => {
       <div className="home_main_content">
         <div className="home_desc_content">
           <h1 className="font-primary text-xxl text-dark_blue dark:text-grey">
-            Welcome.
+            Welcome<span className="text-green">.</span>
           </h1>
 
           <p className="font-primary text-xl text-dark_blue dark:text-grey">
             My name is Adrien, I am a web & mobile developer specialized in
-            front-end development using technologies like JavaScript and React. based in France.
+            front-end development using technologies like JavaScript and React.
+            based in France.
           </p>
         </div>
 
