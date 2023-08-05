@@ -1,6 +1,6 @@
 import React from "react";
 
-const Portfolio = () => {
+const Experience = () => {
   return <div>Portfolio component</div>;
 };
-export default Portfolio;
+export default Experience;

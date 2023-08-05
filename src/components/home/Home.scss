@@ -6,20 +6,6 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transform: translateY(100%);
-  animation: appearHome 1s forwards;
-}
-
-@keyframes appearHome {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .home_main_content {

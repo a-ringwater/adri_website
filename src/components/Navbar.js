@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 
 const Navbar = () => {
   return (
-    <HeaderContainer className="bg-dark_blue dark:bg-navy">
+    <HeaderContainer className="bg-dark_blue">
       <HeaderLogo>
         <Link to="/">
           <div className="text-grey">home</div>

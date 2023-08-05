@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "./common/Button";
 import styled from "styled-components";
-import { colors, fonts } from "../assets/styleVar";
-
+import tw from "twin.macro";
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,10 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: ${fonts.primary};
-  font-size: 50px;
-  color: ${(props) =>
-    props.theme !== "light_mode" ? colors.lightgrey : colors.navy};
+  ${tw`font-primary text-xl text-dark_blue mb-10 dark:text-grey`}
 `;
 
 const Contact = () => {
@@ -26,7 +22,12 @@ const Contact = () => {
     <>
       <Wrapper>
         <Title>Get in touch</Title>
-        <Button onClick={handleClick}>contact me</Button>
+        <Button
+          className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 dark:text-grey dark:border-grey"
+          onClick={handleClick}
+        >
+          send me an e-mail
+        </Button>
       </Wrapper>
     </>
   );
