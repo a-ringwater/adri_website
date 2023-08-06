@@ -40,13 +40,13 @@ const Navbar = () => {
       <Wrapper>
         <div className="flex pr-4">
           <Link to="/about">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">about</div>
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120">about</div>
           </Link>
           <Link to="/experiences">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">experiences</div>
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120">experiences</div>
           </Link>
           <Link to="/contact">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:underline hover:scale-120">contact</div>
+            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120">contact</div>
           </Link>
         </div>
 

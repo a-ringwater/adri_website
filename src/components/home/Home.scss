@@ -26,3 +26,28 @@
   gap: 2rem;
 }
 
+.welcome_text {
+  width: 8ch;
+  font-family: monospace;
+  font-size: 1em;
+  animation: typing 1.25s steps(8), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

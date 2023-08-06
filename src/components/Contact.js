@@ -23,7 +23,7 @@ const Contact = () => {
       <Wrapper>
         <Title>Get in touch</Title>
         <Button
-          className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 dark:text-grey dark:border-grey"
+          className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-grey"
           onClick={handleClick}
         >
           send me an e-mail
