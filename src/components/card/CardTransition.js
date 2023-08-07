@@ -42,7 +42,7 @@ export default function CardTransition({ title, data }) {
     <div className="wrapper_card">
       <animated.div
         style={{ ...rest, width: size, height: size }}
-        className="container"
+        className="container_card"
         onClick={() => set((open) => !open)}
       >
         <div className="text-navy text-md">{title}</div>

@@ -1,0 +1,25 @@
+@keyframes slide {
+  100% {
+    -webkit-transform: translateX(-66.8999%);
+  }
+}
+
+.container {
+  display: flex;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  font-family: monospace;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  border-radius: 0.25em;
+}
+
+.container > p {
+  transform: translate3d(0, 0, 0);
+}
+
+.container .nav_availability {
+  animation: slide 7s linear infinite;
+}

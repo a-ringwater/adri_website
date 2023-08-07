@@ -1,4 +1,5 @@
 import React from "react";
+import "./Navbar.scss";
 import { fonts } from "../assets/styleVar";
 import styled from "styled-components";
 import ThemeToggle from "./ThemeToggle";
@@ -63,6 +64,16 @@ const Navbar = () => {
             </div>
           </HeaderLogo>
 
+          <div className="container">
+            <p className="nav_availability text-green">
+              Available for work
+              <span className="dot">&nbsp;.&nbsp;</span>
+              Available for work
+              <span className="dot">&nbsp;.&nbsp;</span>
+              Available for work
+              <span className="dot">&nbsp;.&nbsp;</span>
+            </p>
+          </div>
           <Wrapper>
             <div className="flex pr-4">
               <Link to="about">

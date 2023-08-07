@@ -2,13 +2,19 @@ import React from "react";
 import "./Home.scss";
 import Button from "../common/Button";
 import { Link } from "react-scroll";
+import hi from "../../assets/hi.png";
 
 const Home = () => {
   return (
     <div className="home_ctr">
+      <div className="wrapper_img">
+        <div className="image_home_ctr border-8 border-grey_blue border-solid dark:border-grey">
+          <img className="image_home" src={hi} alt="hello" />
+        </div>
+      </div>
       <div className="home_desc_content">
         <h1 className="font-primary text-xxl text-dark_blue dark:text-grey">
-          <div className="welcome_title">
+          <div className="welcome_title border-r-4 border-green border-solid">
             Welcome<span className="text-green">.</span>
           </div>
         </h1>

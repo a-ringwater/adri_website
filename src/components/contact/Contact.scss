@@ -2,7 +2,20 @@
   .wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+  }
+
+  .image_ctr {
+    width: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
