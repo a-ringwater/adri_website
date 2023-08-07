@@ -3,6 +3,7 @@ import { fonts } from "../assets/styleVar";
 import styled from "styled-components";
 import ThemeToggle from "./ThemeToggle";
 import { Link } from "react-scroll";
+import useMobileScreen from "../hooks/useMobileScreen";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -31,6 +32,8 @@ const Wrapper = styled.div`
 `;
 
 const Navbar = () => {
+  const { isMobile } = useMobileScreen();
+
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -39,35 +42,51 @@ const Navbar = () => {
   };
 
   return (
-    <HeaderContainer className="bg-dark_blue">
-      <HeaderLogo>
-        <div className="text-grey cursor-pointer" onClick={goToTop}>
-          home
-        </div>
-      </HeaderLogo>
+    <>
+      {isMobile ? (
+        <HeaderContainer className="bg-dark_blue">
+          <HeaderLogo>
+            <div className="text-grey cursor-pointer" onClick={goToTop}>
+              home
+            </div>
+          </HeaderLogo>
 
-      <Wrapper>
-        <div className="flex pr-4">
-          <Link to="about">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-              about
+          <Wrapper>
+            <ThemeToggle />
+          </Wrapper>
+        </HeaderContainer>
+      ) : (
+        <HeaderContainer className="bg-dark_blue">
+          <HeaderLogo>
+            <div className="text-grey cursor-pointer" onClick={goToTop}>
+              home
             </div>
-          </Link>
-          <Link to="experience">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-              experiences
-            </div>
-          </Link>
-          <Link to="contact">
-            <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-              contact
-            </div>
-          </Link>
-        </div>
+          </HeaderLogo>
 
-        <ThemeToggle />
-      </Wrapper>
-    </HeaderContainer>
+          <Wrapper>
+            <div className="flex pr-4">
+              <Link to="about">
+                <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
+                  about
+                </div>
+              </Link>
+              <Link to="experience">
+                <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
+                  experiences
+                </div>
+              </Link>
+              <Link to="contact">
+                <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
+                  contact
+                </div>
+              </Link>
+            </div>
+
+            <ThemeToggle />
+          </Wrapper>
+        </HeaderContainer>
+      )}
+    </>
   );
 };
 
