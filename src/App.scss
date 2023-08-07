@@ -1,18 +1,23 @@
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@media only screen and (min-width: 821px), (max-width: 1089px) {
+  .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 8rem;
+  }
 }
 
-.main-content {
-  min-height: calc(-80px + 100vh);
-  padding: 5rem 1rem 0 8rem;
-}
-
-.nav_section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+/* small */
+@media only screen and (max-width: 549px) {
+  .nav_section {
+    padding: 2rem;
+  }
 }

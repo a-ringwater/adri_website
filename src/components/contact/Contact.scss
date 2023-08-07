@@ -1,0 +1,16 @@
+@media only screen and (min-width: 821px), (max-width: 1089px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* small */
+@media only screen and (max-width: 549px) {
+  .social_media_ctr {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+}

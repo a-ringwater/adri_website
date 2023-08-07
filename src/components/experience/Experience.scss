@@ -1,22 +1,11 @@
 @media only screen and (min-width: 821px), (max-width: 1089px) {
-  .about_ctr {
+  .exp_ctr {
     display: flex;
     flex-direction: column;
     padding-top: 4rem;
-  }
-  .about_title {
-    font-size: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .about_text {
-    font-size: 1.5rem;
   }
 }
 
 /* small */
 @media only screen and (max-width: 549px) {
-  .about_text {
-    font-size: 1.25rem;
-  }
 }

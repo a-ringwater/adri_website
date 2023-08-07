@@ -1,10 +1,11 @@
 import React from "react";
 import ExpItem from "./ExpItem";
-import { experiences } from "../utils/experience";
+import "./Experience.scss";
+import { experiences } from "../../utils/experience";
 
 const Experience = () => {
   return (
-    <div>
+    <div className="exp_ctr">
       {experiences.map((experience, index) => (
         <ExpItem key={index} {...experience} />
       ))}
