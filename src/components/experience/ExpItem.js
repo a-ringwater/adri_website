@@ -20,7 +20,6 @@ const ExpItem = ({ company, job, date, url, desc, techno }) => {
                   rel="noreferrer"
                   aria-label="job title"
                 >
-                  <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded lg:block"></span>
                   <span className="inline-block">
                     {company}
                     <svg

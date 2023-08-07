@@ -39,7 +39,7 @@ export default function CardTransition({ title, data }) {
   ]);
 
   return (
-    <div className="wrapper">
+    <div className="wrapper_card">
       <animated.div
         style={{ ...rest, width: size, height: size }}
         className="container"
