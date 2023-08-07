@@ -11,6 +11,7 @@ const HeaderContainer = styled.div`
   height: 80px;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 `;
 
 const HeaderLogo = styled.div`

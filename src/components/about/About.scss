@@ -1,18 +1,16 @@
 @import "../../variables";
 
+.title_ctr {
+  display: flex;
+  width: 100%;
+}
+
 .about_ctr {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
+  gap: 8rem;
   align-items: center;
 }
 
-.about_content {
-  display: flex;
-  flex-direction: column;
-  font-family: $primary-font;
-  gap: 2rem
+.about_item {
+  flex: 1;
 }
-
-

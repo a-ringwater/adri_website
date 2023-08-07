@@ -13,9 +13,9 @@ const Home = () => {
           </h1>
 
           <p className="font-primary text-xl text-dark_blue dark:text-grey">
-            My name is <span className="highlight">Adrien</span>, I am a web & mobile developer specialized in
-            front-end development using technologies like <span className="highlight">JavaScript</span> and <span className="highlight">React</span>.
-            based in France.
+            My name is <span className="highlight dark:text-green">Adrien</span>, I am a web & mobile developer specialized in
+            front-end development using technologies like <span className="highlight dark:text-green">JavaScript</span> and <span className="highlight dark:text-green">React</span>.
+            Based in France.
           </p>
         </div>
 
