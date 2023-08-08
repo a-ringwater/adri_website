@@ -1,7 +1,11 @@
 # Personal website
 
 JavaScript & React version of my website.
-The purpose of this website is to showcase my background and experience, as well as to experiment with different things. Currently, this repository is utilizing SCSS, Styled Components, and Tailwind CSS ... wow ... for testing purposes.
+The purpose of this website is to showcase my background and experience, as well as to experiment with different things. 
+
+Currently, this repository is utilizing SCSS, Styled Components, and Tailwind CSS ... wow ... for testing purposes.
+
+Website is [here](https://aanodeau.com/)
 
 <div align="center">
   <div style="display: flex; align-items: center; justify-content: center;">
@@ -9,5 +13,3 @@ The purpose of this website is to showcase my background and experience, as well
     <img width="200px" src="https://github.com/a-ringwater/adri_website/blob/5b3540530467be0f7fb12dc6268e73c0bfbdccd1/src/assets/mobile.png" alt="Image 2" />
   </div>
 </div>
-
-Website is [here](https://aanodeau.com/)
