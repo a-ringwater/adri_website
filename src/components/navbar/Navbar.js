@@ -1,10 +1,10 @@
 import React from "react";
 import "./Navbar.scss";
-import { fonts } from "../assets/styleVar";
+import { fonts } from "../../assets/styleVar";
 import styled from "styled-components";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../ThemeToggle";
 import { Link } from "react-scroll";
-import useMobileScreen from "../hooks/useMobileScreen";
+import useMobileScreen from "../../hooks/useMobileScreen";
 
 const HeaderContainer = styled.div`
   display: flex;
