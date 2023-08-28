@@ -8,12 +8,16 @@ import Experience from "./components/experience/Experience";
 import Contact from "./components/contact/Contact";
 import ScrollToTop from "./components/common/ScrollToTop";
 import useMobileScreen from "./hooks/useMobileScreen";
+import "./i18n";
+import { ChakraProvider } from '@chakra-ui/react'
+import theme from "./theme";
+
 
 function App() {
   const { isMobile } = useMobileScreen();
 
   return (
-    <div>
+    <ChakraProvider theme={theme}>
       <Navbar />
       {!isMobile && <Sidebar />}
       <ScrollToTop />
@@ -31,7 +35,7 @@ function App() {
           <Contact />
         </section>
       </div>
-    </div>
+    </ChakraProvider>
   );
 }
 

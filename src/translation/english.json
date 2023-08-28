@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "about": "about",
+    "experiences": "experiences",
+    "contact": "contact",
+    "availability": "Available for work"
+  },
+
+  "button": {
+    "about": "about",
+    "contact": "contact me",
+    "e-mail": "send me an e-mail"
+  },
+
+  "home": {
+    "welcome": "Welcome",
+    "myName": "My name is ",
+    "intro": "I am a web & mobile developer specialized in front-end development using technologies like",
+    "and": "and",
+    "based": "Based in France."
+  },
+
+  "about": {
+    "about": "About me",
+    "content1": "After several years of professional experience in London, I made a career transition into ",
+    "content2": "web and mobile development",
+    "content3": "With 3 years of experience in front-end development, I have specialized in ",
+    "content4": "JavaScript with React",
+    "content5": "Now, I aim to further enhance my skills by learning TypeScript. My work approach is always focused on ",
+    "content6": "code reliability, efficiency and continuous improvement",
+    "technologies": "Technologies I have been working with:",
+    "front-end": "Front-end",
+    "back-end": "Back-end",
+    "databases": "Databases",
+    "test": "Test | CI / CD",
+    "others": "Others"
+  },
+
+  "experiences": {
+    "experiences": "Experiences",
+    "frontDev": "Front-end developer",
+    "expDilepix": "Developed and designed the multi-language web application for Dilepix. This application is designed to facilitate the transmission of various types of data, ranging from images to videos. Data is monitored through a dashboard, where users can perform various actions, including CRUD operations. Additionally, the application offers other functionalities, such as the ability to visualize analyses through customizable graphs.",
+    "fullStack": "Full-stack developer",
+    "expGZ": "Mobile application available on Android and iOS stores. I Developed and designed the mobile application for Génération Zhéros. This application offers an individual coaching that daily guides you towards your own sustainable development journey via different quiz and functionalities. I was also in charge of the development of the MongoDB database, the administration dashboard using Laravel | VueJS and the Wordpress website."
+  },
+
+  "contact": {
+    "getInTouch": "Want to discuss? Please get in touch!",
+    "thanks": "Thank you for your visit!"
+  }
+}

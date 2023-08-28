@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "about": "à propos",
+    "experiences": "expériences",
+    "contact": "contact",
+    "availability": "Actuellement disponible"
+  },
+
+  "button": {
+    "about": "à propos",
+    "contact": "me contacter",
+    "e-mail": "envoyez-moi un e-mail"
+  },
+
+  "home": {
+    "welcome": "Bienvenue",
+    "myName": "Je suis ",
+    "intro": "développeur web et mobile spécialisé dans le développement front-end utilisant des technologies comme",
+    "and": "et",
+    "based": "Basé en France."
+  },
+
+  "about": {
+    "about": "À propos de moi",
+    "content1": "Après plusieurs années d'expérience professionnelle à Londres, j'ai effectué une transition vers le ",
+    "content2": "développement web et mobile",
+    "content3": "Fort de 3 ans d'expérience dans le développement front-end, je me suis spécialisé en ",
+    "content4": "JavaScript et React",
+    "content5": "Maintenant, mon objectif est d'améliorer davantage mes compétences en TypeScript. Mon approche de travail est toujours axée sur ",
+    "content6": "la fiabilité du code, l'efficacité et l'amélioration continue",
+    "technologies": "Les technologies avec lesquelles j'ai travaillé :",
+    "front-end": "Front-end",
+    "back-end": "Back-end",
+    "databases": "Bases de données",
+    "test": "Test | CI / CD",
+    "others": "Autres"
+  },
+
+  "experiences": {
+    "experiences": "Expériences",
+    "frontDev": "Développeur front-end",
+    "expDilepix": "J'ai développé et conçu l'application web multi-langues pour Dilepix. Cette application est conçue pour faciliter la transmission de divers types de données, allant des images aux vidéos. Les données sont disponible via un tableau de bord, où les utilisateurs peuvent effectuer diverses actions, y compris des opérations CRUD. De plus, l'application offre d'autres fonctionnalités, telles que la possibilité de visualiser des analyses via des graphiques personnalisables.",
+    "fullStack": "Développeur full-stack",
+    "expGZ": "Application mobile disponible sur les boutiques Android et iOS. J'ai développé et conçu l'application mobile pour Génération Zhéros. Cette application propose un coaching individuel qui vous guide quotidiennement dans votre propre parcours de développement durable via différents quiz et fonctionnalités. J'étais également responsable du développement de la base de données MongoDB, du tableau de bord d'administration utilisant Laravel | VueJS ainsi que du site Web Wordpress."
+  },
+
+  "contact": {
+    "getInTouch": "Envie de discuter ? N'hésitez pas à me contacter !",
+    "thanks": "Merci pour votre visite !"
+  }
+}
