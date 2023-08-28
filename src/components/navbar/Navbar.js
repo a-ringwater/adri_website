@@ -5,6 +5,9 @@ import styled from "styled-components";
 import ThemeToggle from "../ThemeToggle";
 import { Link } from "react-scroll";
 import useMobileScreen from "../../hooks/useMobileScreen";
+import LanguageMenu from "../language/LanguageMenu";
+import { useTranslation } from "react-i18next";
+import { RiHome3Line } from "react-icons/ri";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -34,6 +37,7 @@ const Wrapper = styled.div`
 
 const Navbar = () => {
   const { isMobile } = useMobileScreen();
+  const { t } = useTranslation();
 
   const goToTop = () => {
     window.scrollTo({
@@ -48,11 +52,12 @@ const Navbar = () => {
         <HeaderContainer className="bg-dark_blue">
           <HeaderLogo>
             <div className="text-grey cursor-pointer" onClick={goToTop}>
-              home
+              <RiHome3Line />
             </div>
           </HeaderLogo>
 
           <Wrapper>
+            <LanguageMenu />
             <ThemeToggle />
           </Wrapper>
         </HeaderContainer>
@@ -60,17 +65,17 @@ const Navbar = () => {
         <HeaderContainer className="bg-dark_blue">
           <HeaderLogo>
             <div className="text-grey cursor-pointer" onClick={goToTop}>
-              home
+              <RiHome3Line />
             </div>
           </HeaderLogo>
 
           <div className="container">
             <p className="nav_availability text-green">
-              Available for work
+              {t("navbar.availability")}
               <span className="dot">&nbsp;.&nbsp;</span>
-              Available for work
+              {t("navbar.availability")}
               <span className="dot">&nbsp;.&nbsp;</span>
-              Available for work
+              {t("navbar.availability")}
               <span className="dot">&nbsp;.&nbsp;</span>
             </p>
           </div>
@@ -78,21 +83,21 @@ const Navbar = () => {
             <div className="flex pr-4">
               <Link to="about">
                 <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-                  about
+                  {t("navbar.about")}
                 </div>
               </Link>
               <Link to="experience">
                 <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-                  experiences
+                  {t("navbar.experiences")}
                 </div>
               </Link>
               <Link to="contact">
                 <div className="font-primary text-grey text-lg mr-4 ml-4 transition duration-300 ease-in-out hover:text-grey_blue hover:scale-120 cursor-pointer">
-                  contact
+                  {t("navbar.contact")}
                 </div>
               </Link>
             </div>
-
+            <LanguageMenu />
             <ThemeToggle />
           </Wrapper>
         </HeaderContainer>

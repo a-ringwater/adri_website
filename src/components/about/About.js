@@ -2,38 +2,37 @@ import React from "react";
 import Skills from "../Skills";
 import "./About.scss";
 import useMobileScreen from "../../hooks/useMobileScreen";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
   const { isMobile } = useMobileScreen();
+  const { t } = useTranslation();
+
   return (
     <div className="about_ctr">
       <div className="about_item">
         <h1 className="about_title font-primary text-dark_blue dark:text-grey">
-          About me
+          {t("about.about")}
         </h1>
         <div className="about_text font-primary text-dark_blue dark:text-grey">
           <p>
-            After several years of professional experience in London, I made a
-            career transition into{" "}
+            {t("about.content1")}
             <span className="highlight dark:text-green">
-              web and mobile development
+              {t("about.content2")}
             </span>
             .{" "}
           </p>
           <p>
-            With 3 years of experience in front-end development, I have
-            specialized in{" "}
+            {t("about.content3")}
             <span className="highlight dark:text-green">
-              JavaScript with React
+              {t("about.content4")}
             </span>
             .{" "}
           </p>
           <p>
-            Now, I aim to further enhance my skills by learning TypeScript. My
-            work approach is always focused on
+            {t("about.content5")}
             <span className="highlight dark:text-green">
-              {" "}
-              code reliability, efficiency and continuous improvement
+              {t("about.content6")}
             </span>
             .{" "}
           </p>
@@ -42,7 +41,7 @@ const About = () => {
       {!isMobile && (
         <div className="about_item">
           <div className="font-primary text-lg text-dark_blue dark:text-grey">
-            Technologies I have been working with:
+            {t("about.technologies")}
           </div>
           <Skills />
         </div>

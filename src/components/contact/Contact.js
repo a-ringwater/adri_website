@@ -4,9 +4,12 @@ import "./Contact.scss";
 import useMobileScreen from "../../hooks/useMobileScreen";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import greeting from "../../assets/greeting.png";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { isMobile } = useMobileScreen();
+  const { t } = useTranslation();
+
   const handleClick = () => {
     window.location.href = "mailto:adrien.anodeau@gmail.com";
   };
@@ -21,16 +24,16 @@ const Contact = () => {
   return (
     <div className="wrapper">
       <div className="flex items-center font-primary text-lg text-dark_blue mb-10 dark:text-grey">
-        Want to discuss? Please get in touch!
+        {t("contact.getInTouch")}
       </div>
       <Button
         className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-grey"
         onClick={handleClick}
       >
-        send me an e-mail
+        {t("button.e-mail")}
       </Button>
       <div className="flex justify-center items-center font-primary text-lg text-dark_blue mb-10 dark:text-grey pt-8">
-        Thank you for your visit!
+        {t("contact.thanks")}
       </div>
       <div className="image_ctr">
         <img className="image" src={greeting} alt="bye" />

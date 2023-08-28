@@ -60,4 +60,5 @@ const ExpItem = ({ company, job, date, url, desc, techno }) => {
     </>
   );
 };
+
 export default ExpItem;
