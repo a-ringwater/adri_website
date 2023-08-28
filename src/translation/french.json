@@ -13,7 +13,6 @@
   },
 
   "home": {
-    "welcome": "Bienvenue",
     "myName": "Je suis ",
     "intro": "développeur web et mobile spécialisé dans le développement front-end utilisant des technologies comme",
     "and": "et",
@@ -37,11 +36,7 @@
   },
 
   "experiences": {
-    "experiences": "Expériences",
-    "frontDev": "Développeur front-end",
-    "expDilepix": "J'ai développé et conçu l'application web multi-langues pour Dilepix. Cette application est conçue pour faciliter la transmission de divers types de données, allant des images aux vidéos. Les données sont disponible via un tableau de bord, où les utilisateurs peuvent effectuer diverses actions, y compris des opérations CRUD. De plus, l'application offre d'autres fonctionnalités, telles que la possibilité de visualiser des analyses via des graphiques personnalisables.",
-    "fullStack": "Développeur full-stack",
-    "expGZ": "Application mobile disponible sur les boutiques Android et iOS. J'ai développé et conçu l'application mobile pour Génération Zhéros. Cette application propose un coaching individuel qui vous guide quotidiennement dans votre propre parcours de développement durable via différents quiz et fonctionnalités. J'étais également responsable du développement de la base de données MongoDB, du tableau de bord d'administration utilisant Laravel | VueJS ainsi que du site Web Wordpress."
+    "experiences": "Expériences"
   },
 
   "contact": {

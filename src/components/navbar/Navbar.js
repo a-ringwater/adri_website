@@ -33,6 +33,7 @@ const HeaderLogo = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  gap: 1rem;
 `;
 
 const Navbar = () => {

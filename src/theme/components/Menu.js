@@ -7,11 +7,11 @@ const { definePartsStyle, defineMultiStyleConfig } =
 const baseStyle = definePartsStyle({
   button: {
     bg: "transparent",
-    _hover: {
-      bg: "teal.600",
-      color: "teal.600",
-    },
   },
+  item: {
+    display: "flex",
+    gap: "1rem"
+  }
 });
 
 export const menuTheme = defineMultiStyleConfig({ baseStyle });

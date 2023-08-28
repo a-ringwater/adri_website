@@ -3,7 +3,7 @@
 JavaScript & React version of my website.
 The purpose of this website is to showcase my background and experience, as well as to experiment with different things. 
 
-Currently, this repository is utilizing SCSS, Styled Components, and Tailwind CSS ... wow ... for testing purposes.
+Currently, this repository is utilizing SCSS, Styled Components, and Tailwind CSS ... for testing purposes.
 
 Website is [here](https://aanodeau.com/)
 
