@@ -15,7 +15,10 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   height: 80px;
   position: fixed;
-  width: 100%;
+  width: auto;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
   z-index: 9999;
 `;
 
@@ -50,7 +53,7 @@ const Navbar = () => {
   return (
     <>
       {isMobile ? (
-        <HeaderContainer className="bg-dark_blue">
+        <HeaderContainer className="bg-dark_blue/75 rounded-lg">
           <HeaderLogo>
             <div className="text-grey cursor-pointer" onClick={goToTop}>
               <RiHome3Line />
@@ -63,7 +66,7 @@ const Navbar = () => {
           </Wrapper>
         </HeaderContainer>
       ) : (
-        <HeaderContainer className="bg-dark_blue">
+        <HeaderContainer className="bg-dark_blue/75 rounded-lg">
           <HeaderLogo>
             <div className="text-grey cursor-pointer" onClick={goToTop}>
               <RiHome3Line />

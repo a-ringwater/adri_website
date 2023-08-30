@@ -9,19 +9,18 @@ import Contact from "./components/contact/Contact";
 import ScrollToTop from "./components/common/ScrollToTop";
 import useMobileScreen from "./hooks/useMobileScreen";
 import "./i18n";
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme";
-
 
 function App() {
   const { isMobile } = useMobileScreen();
 
   return (
     <ChakraProvider theme={theme}>
-      <Navbar />
-      {!isMobile && <Sidebar />}
-      <ScrollToTop />
       <div className="bg-grey dark:bg-navy">
+        <Navbar />
+        {!isMobile && <Sidebar />}
+        <ScrollToTop />
         <section id="home" className="nav_section">
           <Home />
         </section>
