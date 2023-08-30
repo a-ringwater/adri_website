@@ -4,7 +4,6 @@ import { fonts } from "../../assets/styleVar";
 
 const ButtonStyled = styled.button`
   font-family: ${fonts.primary};
-  font-size: 20px;
   background-color: transparent;
   border-radius: 0.25em;
   padding: 1em;

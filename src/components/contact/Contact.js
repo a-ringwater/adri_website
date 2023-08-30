@@ -23,16 +23,16 @@ const Contact = () => {
 
   return (
     <div className="wrapper">
-      <div className="flex items-center font-primary text-lg text-dark_blue mb-10 dark:text-grey">
+      <div className="flex items-center font-primary md:text-lg sm:text-md text-dark_blue mb-10 dark:text-grey">
         {t("contact.getInTouch")}
       </div>
       <Button
-        className="font-primary text-dark_blue text-lg mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-grey"
+        className="font-primary text-dark_blue md:text-lg sm:text-md mr-4 ml-4 border-2 border-green transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-green"
         onClick={handleClick}
       >
         {t("button.e-mail")}
       </Button>
-      <div className="flex justify-center items-center font-primary text-lg text-dark_blue mb-10 dark:text-grey pt-8">
+      <div className="flex justify-center items-center font-primary md:text-lg sm:text-md text-dark_blue mb-10 dark:text-grey pt-8">
         {t("contact.thanks")}
       </div>
       <div className="image_ctr">
