@@ -10,7 +10,8 @@ module.exports = {
       xxl: "70px",
       xl: "35px",
       lg: "25px",
-      md: "25px",
+      md: "20px",
+      sm: "15px",
     },
     extend: {
       colors: {
@@ -32,6 +33,13 @@ module.exports = {
         90: "90px",
       },
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   darkMode: "class",
   plugins: [],
