@@ -16,10 +16,11 @@ export default function CardTransition({ title, data }) {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
-    from: { size: "25%", background: "#BACDD9" },
+    from: { size: "25%", background: "#728EA6" },
     to: {
       size: open ? "100%" : "25%",
-      background: open ? "#728EA6" : "#BACDD9",
+      background: open ? "#072040" : "#728EA6",
+      color: open ? "#D9D9D9" : "#D9D9D9",
     },
   });
 
@@ -45,10 +46,10 @@ export default function CardTransition({ title, data }) {
         className="container_card"
         onClick={() => set((open) => !open)}
       >
-        <div className="text-navy text-md">{title}</div>
+        <div className="text-md">{title}</div>
         {transition((style, item) => (
           <animated.div
-            className="item text-white text-md"
+            className="rounded-md text-md will-change-transform"
             style={{ ...style }}
           >
             {item.name}

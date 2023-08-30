@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="home_ctr">
       <div className="wrapper_img">
-        <div className="image_home_ctr border-4 border-grey_blue border-solid dark:border-green">
+        <div className="image_home_ctr border-4 border-green border-solid">
           <img className="image_home" src={hi} alt="hello" />
         </div>
       </div>
@@ -32,12 +32,12 @@ const Home = () => {
 
       <div className="home_btn_ctr">
         <Link to="about">
-          <Button className="font-primary text-dark_blue md:text-lg sm:text-md mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-green">
+          <Button className="font-primary text-dark_blue md:text-lg sm:text-md mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-green hover:text-grey dark:text-grey dark:border-green">
             {t("button.about")}
           </Button>
         </Link>
         <Link to="contact">
-          <Button className="font-primary text-dark_blue md:text-lg sm:text-md mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-dark_blue hover:text-grey dark:text-grey dark:border-green">
+          <Button className="font-primary text-dark_blue md:text-lg sm:text-md mr-4 ml-4 border-2 border-dark_blue transition duration-300 ease-in-out hover:scale-120 hover:bg-green hover:text-grey dark:text-grey dark:border-green">
             {t("button.contact")}
           </Button>
         </Link>

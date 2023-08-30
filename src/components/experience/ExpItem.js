@@ -17,7 +17,7 @@ const ExpItem = ({ company, job, date, url, desc, techno }) => {
               rel="noreferrer"
               aria-label="job title"
             >
-              <span className="font-primary text-lg text-dark_blue dark:text-grey dark:hover:text-green inline-block">
+              <span className="font-primary text-lg text-dark_blue hover:text-green dark:text-grey dark:hover:text-green inline-block">
                 {company}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

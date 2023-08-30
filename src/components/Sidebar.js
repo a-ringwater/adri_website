@@ -26,7 +26,7 @@ const Github = styled(AiFillGithub)`
   cursor: pointer;
   ${tw`text-grey_blue`}
   &:hover {
-    ${tw`text-blue_v2 dark:text-light_blue`}
+    ${tw`text-blue_v2 dark:text-green`}
   }
 `;
 
@@ -34,7 +34,7 @@ const Linkedin = styled(AiFillLinkedin)`
   cursor: pointer;
   ${tw`text-grey_blue`}
   &:hover {
-    ${tw`text-blue_v2 dark:text-light_blue`}
+    ${tw`text-blue_v2 dark:text-green`}
   }
 `;
 

@@ -14,7 +14,7 @@ const useMobileScreen = () => {
     };
   }, []);
 
-  const isMobile = width <= 820;
+  const isMobile = width <= 955;
 
   return { isMobile };
 };

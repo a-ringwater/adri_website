@@ -17,21 +17,21 @@ const About = () => {
         <div className="about_text font-primary text-dark_blue dark:text-grey">
           <p>
             {t("about.content1")}
-            <span className="highlight dark:text-green">
+            <span className="text-green">
               {t("about.content2")}
             </span>
             .{" "}
           </p>
           <p>
             {t("about.content3")}
-            <span className="highlight dark:text-green">
+            <span className="text-green">
               {t("about.content4")}
             </span>
             .{" "}
           </p>
           <p>
             {t("about.content5")}
-            <span className="highlight dark:text-green">
+            <span className="text-green">
               {t("about.content6")}
             </span>
             .{" "}
