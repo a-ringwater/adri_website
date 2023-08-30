@@ -4,7 +4,7 @@ export const colors = {
   green_variant: "#64ffda",
   grey: "#8892b0",
   lightgrey: "#a8b2d1",
-  navy: "#0a192f",
+  navy: "#08080D",
   yellow: "#F2BB16",
 };
 

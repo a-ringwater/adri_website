@@ -8,14 +8,12 @@
 
   "button": {
     "about": "about",
-    "contact": "contact me",
+    "contact": "contact",
     "e-mail": "send me an e-mail"
   },
 
   "home": {
-    "myName": "My name is ",
     "intro": "I am a web & mobile developer specialized in front-end development using technologies like",
-    "and": "and",
     "based": "Based in France."
   },
 

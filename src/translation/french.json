@@ -13,14 +13,12 @@
   },
 
   "home": {
-    "myName": "Je suis ",
-    "intro": "développeur web et mobile spécialisé dans le développement front-end utilisant des technologies comme",
-    "and": "et",
+    "intro": "Développeur web & mobile.",
     "based": "Basé en France."
   },
 
   "about": {
-    "about": "À propos de moi",
+    "about": "À propos",
     "content1": "Après plusieurs années d'expérience professionnelle à Londres, j'ai effectué une transition vers le ",
     "content2": "développement web et mobile",
     "content3": "Fort de 3 ans d'expérience dans le développement front-end, je me suis spécialisé en ",
